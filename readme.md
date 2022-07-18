@@ -1,6 +1,6 @@
 # Reqres API Testing - Cypress
 
-![Cypress Tests](https://github.com/benjaminpinto/reqres/actions/workflows/cypressAction.yml/badge.svg) ![Security OWASP](https://github.com/benjaminpinto/reqres/actions/workflows/owaspAction.yml/badge.svg)
+![Cypress Tests](https://github.com/benjaminpinto/reqres-cypress/actions/workflows/cypressAction.yml/badge.svg) ![Security OWASP](https://github.com/benjaminpinto/reqres-cypress/actions/workflows/owaspAction.yml/badge.svg)
 
 This project is the automation of an API exploratory test performed upon [reqres application](https://reqres.in/).
 
