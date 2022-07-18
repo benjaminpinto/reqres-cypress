@@ -122,12 +122,12 @@ td {
 
 	<h2>
 		
-		Site: https://www.globalsqa.com
+		Site: https://reqres.in
 		
 	</h2>
 
 	<h3>
-		Generated on Mon, 18 Jul 2022 03:09:45
+		Generated on Mon, 18 Jul 2022 03:12:42
 	</h3>
 
 	
@@ -144,7 +144,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>1</div>
+					<div>0</div>
 				</td>
 			</tr>
 			<tr>
@@ -152,7 +152,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>3</div>
+					<div>5</div>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +160,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>7</div>
+					<div>5</div>
 				</td>
 			</tr>
 			<tr>
@@ -168,7 +168,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>6</div>
+					<div>4</div>
 				</td>
 			</tr>
 			<tr>
@@ -194,17 +194,22 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
-				<td><a href="#10062">PII Disclosure</a></td>
-				<td align="center" class="risk-3">High</td>
-				<td align="center">5</td>
+				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
+				<td align="center" class="risk-2">Medium</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
-				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
+				<td><a href="#10055">CSP: Wildcard Directive</a></td>
+				<td align="center" class="risk-2">Medium</td>
+				<td align="center">1</td>
+			</tr>
+			<tr>
+				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">11</td>
 			</tr>
 			<tr>
-				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
+				<td><a href="#10098">Cross-Domain Misconfiguration</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">11</td>
 			</tr>
@@ -214,24 +219,14 @@ td {
 				<td align="center">11</td>
 			</tr>
 			<tr>
-				<td><a href="#10044">Big Redirect Detected (Potential Sensitive Information Leak)</a></td>
+				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">10</td>
 			</tr>
 			<tr>
-				<td><a href="#10010">Cookie No HttpOnly Flag</a></td>
+				<td><a href="#10037">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">4</td>
-			</tr>
-			<tr>
-				<td><a href="#10054">Cookie without SameSite Attribute</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">4</td>
-			</tr>
-			<tr>
-				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">22</td>
+				<td align="center">11</td>
 			</tr>
 			<tr>
 				<td><a href="#10035">Strict-Transport-Security Header Not Set</a></td>
@@ -241,7 +236,7 @@ td {
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">4</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
@@ -249,14 +244,9 @@ td {
 				<td align="center">11</td>
 			</tr>
 			<tr>
-				<td><a href="#90011">Charset Mismatch </a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">12</td>
-			</tr>
-			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">10</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -269,14 +259,9 @@ td {
 				<td align="center">11</td>
 			</tr>
 			<tr>
-				<td><a href="#10050">Retrieved from Cache</a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">12</td>
-			</tr>
-			<tr>
 				<td><a href="#10031">User Controllable HTML Element Attribute (Potential XSS)</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
+				<td align="center">3</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -284,183 +269,6 @@ td {
 
 	
 		<h3>Alert Detail</h3>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-3"><a
-						id="10062"></a>
-						<div>High</div></th>
-					<th class="risk-3">PII Disclosure</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/2017/07/">https://www.globalsqa.com/2017/07/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">503908763918</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/author/globalsqa/">https://www.globalsqa.com/author/globalsqa/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">5742405763444</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/category/python-programs/">https://www.globalsqa.com/category/python-programs/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">5859525594796</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/how-to-get-code-coverage-with-jacoco-and-espresso/">https://www.globalsqa.com/how-to-get-code-coverage-with-jacoco-and-espresso/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">4340015536549</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-tensorflow-ebooks/">https://www.globalsqa.com/free-tensorflow-ebooks/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">5742405763444</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">5</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/359.html">359</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10062/">10062</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -501,7 +309,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -521,13 +329,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form class=&quot;search&quot; action=&quot;https://www.globalsqa.com/&quot; method=&quot;get&quot;&gt;</td>
+						<td width="80%">&lt;form class=&quot;breathe&quot; action=&quot;#&quot; id=&quot;supportForm&quot;&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -547,13 +355,21 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form class=&quot;search&quot; action=&quot;https://www.globalsqa.com/&quot; method=&quot;get&quot;&gt;</td>
+						<td width="80%">&lt;form
+                        action=&quot;https://benhowdle.us20.list-manage.com/subscribe/post?u=8c58165749318545a89cd1b21&amp;amp;id=544f278469&quot;
+                        method=&quot;post&quot;
+                        id=&quot;mc-embedded-subscribe-form&quot;
+                        name=&quot;mc-embedded-subscribe-form&quot;
+                        class=&quot;validate&quot;
+                        target=&quot;_blank&quot;
+                        novalidate
+                    &gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -573,13 +389,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form class=&quot;search&quot; action=&quot;https://www.globalsqa.com/&quot; method=&quot;get&quot;&gt;</td>
+						<td width="80%">&lt;form class=&quot;breathe&quot; action=&quot;#&quot; id=&quot;supportForm&quot;&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -599,13 +415,21 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;commentform&quot; class=&quot;comment-form&quot;&gt;</td>
+						<td width="80%">&lt;form
+                        action=&quot;https://benhowdle.us20.list-manage.com/subscribe/post?u=8c58165749318545a89cd1b21&amp;amp;id=544f278469&quot;
+                        method=&quot;post&quot;
+                        id=&quot;mc-embedded-subscribe-form&quot;
+                        name=&quot;mc-embedded-subscribe-form&quot;
+                        class=&quot;validate&quot;
+                        target=&quot;_blank&quot;
+                        novalidate
+                    &gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -625,13 +449,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form role=&quot;search&quot; method=&quot;get&quot; id=&quot;searchform&quot; class=&quot;searchform&quot; action=&quot;https://www.globalsqa.com/&quot;&gt;</td>
+						<td width="80%">&lt;form class=&quot;breathe&quot; action=&quot;#&quot; id=&quot;supportForm&quot;&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -651,13 +475,21 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form action=&quot;/free-deep-learning-ebooks/&quot; method=&quot;post&quot;&gt;</td>
+						<td width="80%">&lt;form
+                        action=&quot;https://benhowdle.us20.list-manage.com/subscribe/post?u=8c58165749318545a89cd1b21&amp;amp;id=544f278469&quot;
+                        method=&quot;post&quot;
+                        id=&quot;mc-embedded-subscribe-form&quot;
+                        name=&quot;mc-embedded-subscribe-form&quot;
+                        class=&quot;validate&quot;
+                        target=&quot;_blank&quot;
+                        novalidate
+                    &gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -677,13 +509,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form class=&quot;search&quot; action=&quot;https://www.globalsqa.com/&quot; method=&quot;get&quot;&gt;</td>
+						<td width="80%">&lt;form class=&quot;breathe&quot; action=&quot;#&quot; id=&quot;supportForm&quot;&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -703,13 +535,21 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form class=&quot;search&quot; action=&quot;https://www.globalsqa.com/&quot; method=&quot;get&quot;&gt;</td>
+						<td width="80%">&lt;form
+                        action=&quot;https://benhowdle.us20.list-manage.com/subscribe/post?u=8c58165749318545a89cd1b21&amp;amp;id=544f278469&quot;
+                        method=&quot;post&quot;
+                        id=&quot;mc-embedded-subscribe-form&quot;
+                        name=&quot;mc-embedded-subscribe-form&quot;
+                        class=&quot;validate&quot;
+                        target=&quot;_blank&quot;
+                        novalidate
+                    &gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -729,13 +569,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;commentform&quot; class=&quot;comment-form&quot;&gt;</td>
+						<td width="80%">&lt;form class=&quot;breathe&quot; action=&quot;#&quot; id=&quot;supportForm&quot;&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -755,38 +595,20 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form role=&quot;search&quot; method=&quot;get&quot; id=&quot;searchform&quot; class=&quot;searchform&quot; action=&quot;https://www.globalsqa.com/&quot;&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form action=&quot;/free-machine-learning-ebooks/&quot; method=&quot;post&quot;&gt;</td>
+						<td width="80%">&lt;form
+                        action=&quot;https://benhowdle.us20.list-manage.com/subscribe/post?u=8c58165749318545a89cd1b21&amp;amp;id=544f278469&quot;
+                        method=&quot;post&quot;
+                        id=&quot;mc-embedded-subscribe-form&quot;
+                        name=&quot;mc-embedded-subscribe-form&quot;
+                        class=&quot;validate&quot;
+                        target=&quot;_blank&quot;
+                        novalidate
+                    &gt;</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">10</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -867,6 +689,100 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-2"><a
+						id="10055"></a>
+						<div>Medium</div></th>
+					<th class="risk-2">CSP: Wildcard Directive</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/api-docs">https://reqres.in/api-docs</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;none&#39;</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a>
+							<br />
+						
+							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
+							<br />
+						
+							<a href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a>
+							<br />
+						
+							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
+							<br />
+						
+							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
+							<br />
+						
+							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">15</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-2"><a
 						id="10038"></a>
 						<div>Medium</div></th>
 					<th class="risk-2">Content Security Policy (CSP) Header Not Set</th>
@@ -885,7 +801,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -911,7 +827,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
+						<td width="80%"><a href="https://reqres.in/%23%23link%23%23">https://reqres.in/%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -937,7 +853,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cdn-cgi/l/email-protection">https://www.globalsqa.com/cdn-cgi/l/email-protection</a></td>
+						<td width="80%"><a href="https://reqres.in/%23%23logo%23%23">https://reqres.in/%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -963,7 +879,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
+						<td width="80%"><a href="https://reqres.in/%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -989,7 +905,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/demo-site/">https://www.globalsqa.com/demo-site/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1015,7 +931,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/">https://reqres.in/api-docs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1041,7 +957,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/cdn-cgi/l/email-protection">https://reqres.in/cdn-cgi/l/email-protection</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1067,7 +983,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-elasticsearch-ebooks/">https://www.globalsqa.com/free-elasticsearch-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1093,7 +1009,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml">https://reqres.in/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1119,7 +1035,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-tensorflow-ebooks/">https://www.globalsqa.com/free-tensorflow-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml%23%23link%23%23">https://reqres.in/sitemap.xml%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1145,7 +1061,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-admin/admin-ajax.php">https://www.globalsqa.com/wp-admin/admin-ajax.php</a></td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml%23%23logo%23%23">https://reqres.in/sitemap.xml%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1224,6 +1140,348 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-2"><a
+						id="10098"></a>
+						<div>Medium</div></th>
+					<th class="risk-2">Cross-Domain Misconfiguration</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/%23%23link%23%23">https://reqres.in/%23%23link%23%23</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/%23%23logo%23%23">https://reqres.in/%23%23logo%23%23</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/css/app.css">https://reqres.in/css/app.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/img/logo.png">https://reqres.in/img/logo.png</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/img/swagger-logo-horizontal.jpeg">https://reqres.in/img/swagger-logo-horizontal.jpeg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/js/app.js">https://reqres.in/js/app.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml">https://reqres.in/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml%23%23link%23%23">https://reqres.in/sitemap.xml%23%23link%23%23</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">11</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</div>
+							<br />
+						
+							<div>Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy">https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/264.html">264</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">14</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10098/">10098</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-2"><a
 						id="10020"></a>
 						<div>Medium</div></th>
 					<th class="risk-2">Missing Anti-clickjacking Header</th>
@@ -1242,7 +1500,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1268,7 +1526,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1294,7 +1552,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1320,7 +1578,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/demo-site/">https://www.globalsqa.com/demo-site/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1346,7 +1604,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/demo-site/tooltip/">https://www.globalsqa.com/demo-site/tooltip/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1372,7 +1630,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1398,7 +1656,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1424,7 +1682,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-elasticsearch-ebooks/">https://www.globalsqa.com/free-elasticsearch-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1450,7 +1708,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%252523%252523link%252523%252523%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%252523%252523link%252523%252523%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1476,7 +1734,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-tensorflow-ebooks/">https://www.globalsqa.com/free-tensorflow-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%252523%252523link%252523%252523%2523%2523link%2523%2523%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%252523%252523link%252523%252523%2523%2523link%2523%2523%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1502,7 +1760,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/testers-hub/">https://www.globalsqa.com/testers-hub/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/">https://reqres.in/api-docs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1566,630 +1824,6 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10044"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Big Redirect Detected (Potential Sensitive Information Leak)</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor">https://www.globalsqa.com/angularJs-protractor</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/ConsumptionCalculator">https://www.globalsqa.com/angularJs-protractor/ConsumptionCalculator</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/Multiform">https://www.globalsqa.com/angularJs-protractor/Multiform</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/registration-login-example">https://www.globalsqa.com/angularJs-protractor/registration-login-example</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/Scrollable">https://www.globalsqa.com/angularJs-protractor/Scrollable</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/SearchFilter">https://www.globalsqa.com/angularJs-protractor/SearchFilter</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/SimpleCalculator">https://www.globalsqa.com/angularJs-protractor/SimpleCalculator</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/UploadImage">https://www.globalsqa.com/angularJs-protractor/UploadImage</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/WebTable">https://www.globalsqa.com/angularJs-protractor/WebTable</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">10</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10044/">10044</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10010"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Cookie No HttpOnly Flag</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php?action=lostpassword">https://www.globalsqa.com/wp-login.php?action=lostpassword</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">wordpress_test_cookie</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: wordpress_test_cookie</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Fwww.globalsqa.com%2Fwp-admin%2F">https://www.globalsqa.com/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Fwww.globalsqa.com%2Fwp-admin%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">wordpress_test_cookie</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: wordpress_test_cookie</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php">https://www.globalsqa.com/wp-login.php</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">tk_ai</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: tk_ai</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php">https://www.globalsqa.com/wp-login.php</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">wordpress_test_cookie</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: wordpress_test_cookie</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that the HttpOnly flag is set for all cookies.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10010/">10010</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10054"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Cookie without SameSite Attribute</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php?action=lostpassword">https://www.globalsqa.com/wp-login.php?action=lostpassword</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">wordpress_test_cookie</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: wordpress_test_cookie</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Fwww.globalsqa.com%2Fwp-admin%2F">https://www.globalsqa.com/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Fwww.globalsqa.com%2Fwp-admin%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">wordpress_test_cookie</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: wordpress_test_cookie</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php">https://www.globalsqa.com/wp-login.php</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">tk_ai</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: tk_ai</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php">https://www.globalsqa.com/wp-login.php</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">wordpress_test_cookie</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">set-cookie: wordpress_test_cookie</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10054/">10054</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
 						id="10017"></a>
 						<div>Low</div></th>
 					<th class="risk-1">Cross-Domain JavaScript Source File Inclusion</th>
@@ -2208,7 +1842,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2218,7 +1852,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js</td>
+						<td width="80%">//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2228,13 +1862,18 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2244,7 +1883,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-admin/js/common.min.js</td>
+						<td width="80%">//m.servedby-buysellads.com/monetization.custom.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2254,13 +1893,16 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-admin/js/common.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2270,7 +1912,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-includes/js/hoverIntent.min.js</td>
+						<td width="80%">https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2280,13 +1922,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-includes/js/hoverIntent.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2296,7 +1938,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/jquery-migrate.min.js</td>
+						<td width="80%">https://js.stripe.com/v3/</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2306,13 +1948,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/jquery-migrate.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2322,7 +1964,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/jquery.js</td>
+						<td width="80%">https://www.googletagmanager.com/gtag/js?id=UA-174008107-1</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2332,13 +1974,16 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/jquery.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2348,7 +1993,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/ui/accordion.min.js</td>
+						<td width="80%">//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2358,13 +2003,18 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/ui/accordion.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2374,7 +2024,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/ui/core.min.js</td>
+						<td width="80%">//m.servedby-buysellads.com/monetization.custom.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2384,13 +2034,16 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/ui/core.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2400,7 +2053,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/ui/widget.min.js</td>
+						<td width="80%">https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2410,13 +2063,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-includes/js/jquery/ui/widget.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2426,7 +2079,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-includes/js/utils.min.js</td>
+						<td width="80%">https://js.stripe.com/v3/</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2436,13 +2089,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-includes/js/utils.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2452,7 +2105,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/c/5.4.10/wp-includes/js/wp-embed.min.js</td>
+						<td width="80%">https://www.googletagmanager.com/gtag/js?id=UA-174008107-1</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2462,324 +2115,15 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/c/5.4.10/wp-includes/js/wp-embed.min.js&#39;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/p/jetpack/8.5.1/_inc/build/carousel/jetpack-carousel.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/p/jetpack/8.5.1/_inc/build/carousel/jetpack-carousel.min.js&#39;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/p/jetpack/8.5.1/_inc/build/jquery.spin.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/p/jetpack/8.5.1/_inc/build/jquery.spin.min.js&#39;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/p/jetpack/8.5.1/_inc/build/lazy-images/js/lazy-images.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/p/jetpack/8.5.1/_inc/build/lazy-images/js/lazy-images.min.js&#39;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/p/jetpack/8.5.1/_inc/build/photon/photon.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/p/jetpack/8.5.1/_inc/build/photon/photon.min.js&#39;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://c0.wp.com/p/jetpack/8.5.1/_inc/build/spin.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://c0.wp.com/p/jetpack/8.5.1/_inc/build/spin.min.js&#39;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-ad-client=&quot;ca-pub-2878895907861435&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://stats.wp.com/e-202228.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://stats.wp.com/e-202228.js&#39; async=&#39;async&#39; defer=&#39;defer&#39;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://www.googletagmanager.com/gtag/js?id=UA-67337609-1</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-67337609-1&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">22</td>
+					<td width="80%">10</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2812,6 +2156,348 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
+						id="10037"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/%23%23link%23%23">https://reqres.in/%23%23link%23%23</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/%23%23logo%23%23">https://reqres.in/%23%23logo%23%23</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/api-docs">https://reqres.in/api-docs</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/css/app.css">https://reqres.in/css/app.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/img/logo.png">https://reqres.in/img/logo.png</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/img/swagger-logo-horizontal.jpeg">https://reqres.in/img/swagger-logo-horizontal.jpeg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/js/app.js">https://reqres.in/js/app.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml">https://reqres.in/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Express</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">11</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a>
+							<br />
+						
+							<a href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10037/">10037</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
 						id="10035"></a>
 						<div>Low</div></th>
 					<th class="risk-1">Strict-Transport-Security Header Not Set</th>
@@ -2830,7 +2516,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2856,7 +2542,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
+						<td width="80%"><a href="https://reqres.in/%23%23link%23%23">https://reqres.in/%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2882,7 +2568,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cdn-cgi/l/email-protection">https://www.globalsqa.com/cdn-cgi/l/email-protection</a></td>
+						<td width="80%"><a href="https://reqres.in/%23%23logo%23%23">https://reqres.in/%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2908,7 +2594,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
+						<td width="80%"><a href="https://reqres.in/cdn-cgi/l/email-protection">https://reqres.in/cdn-cgi/l/email-protection</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2934,7 +2620,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">https://reqres.in/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2960,7 +2646,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/css/app.css">https://reqres.in/css/app.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2986,7 +2672,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-elasticsearch-ebooks/">https://www.globalsqa.com/free-elasticsearch-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/img/logo.png">https://reqres.in/img/logo.png</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3012,7 +2698,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/img/swagger-logo-horizontal.jpeg">https://reqres.in/img/swagger-logo-horizontal.jpeg</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3038,7 +2724,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/robots.txt">https://www.globalsqa.com/robots.txt</a></td>
+						<td width="80%"><a href="https://reqres.in/js/app.js">https://reqres.in/js/app.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3064,7 +2750,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/sitemap.xml">https://www.globalsqa.com/sitemap.xml</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3090,7 +2776,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-admin/admin-ajax.php">https://www.globalsqa.com/wp-admin/admin-ajax.php</a></td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml">https://reqres.in/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3181,7 +2867,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3201,13 +2887,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">112270736</td>
+						<td width="80%">174008107</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3227,13 +2913,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1658102236</td>
+						<td width="80%">55888877</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3253,13 +2939,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">20120208</td>
+						<td width="80%">174008107</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/robots.txt">https://reqres.in/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3279,12 +2965,64 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">67337609</td>
+						<td width="80%">55888877</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml">https://reqres.in/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">174008107</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/sitemap.xml">https://reqres.in/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">55888877</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3338,7 +3076,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3364,7 +3102,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3390,7 +3128,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3416,7 +3154,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/demo-site/">https://www.globalsqa.com/demo-site/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3442,7 +3180,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/">https://reqres.in/api-docs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3468,7 +3206,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/favicon-32x32.png">https://reqres.in/api-docs/favicon-32x32.png</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3494,7 +3232,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-elasticsearch-ebooks/">https://www.globalsqa.com/free-elasticsearch-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/swagger-ui.css">https://reqres.in/api-docs/swagger-ui.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3520,7 +3258,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/css/app.css">https://reqres.in/css/app.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3546,7 +3284,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-tensorflow-ebooks/">https://www.globalsqa.com/free-tensorflow-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/img/logo.png">https://reqres.in/img/logo.png</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3572,7 +3310,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/robots.txt">https://www.globalsqa.com/robots.txt</a></td>
+						<td width="80%"><a href="https://reqres.in/img/swagger-logo-horizontal.jpeg">https://reqres.in/img/swagger-logo-horizontal.jpeg</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3598,7 +3336,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/sitemap.xml">https://www.globalsqa.com/sitemap.xml</a></td>
+						<td width="80%"><a href="https://reqres.in/js/app.js">https://reqres.in/js/app.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3665,374 +3403,6 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
-						id="90011"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Charset Mismatch </th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>This check identifies responses where the HTTP Content-Type header declares a charset different from the charset defined by the body of the HTML or XML. When there&#39;s a charset mismatch between the HTTP header and content body Web browsers can be forced into an undesirable content-sniffing mode to determine the content&#39;s correct character set.</div>
-							<br />
-						
-							<div>An attacker could manipulate content on the page to be interpreted in an encoding of their choice. For example, if an attacker can control content at the beginning of the page, they could inject script using UTF-7 encoded text and manipulate some browsers into interpreting that text.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fcheatsheets%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fcheatsheets%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fdemo-site%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fdemo-site%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fdemo-site%2Falertbox%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fdemo-site%2Falertbox%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fdemo-site%2Fdatepicker%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fdemo-site%2Fdatepicker%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fdemo-site%2Ftooltip%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Fdemo-site%2Ftooltip%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-deep-learning-ebooks%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-deep-learning-ebooks%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-ebooks%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-ebooks%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-elasticsearch-ebooks%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-elasticsearch-ebooks%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-machine-learning-ebooks%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-machine-learning-ebooks%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-tensorflow-ebooks%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ffree-tensorflow-ebooks%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ftesters-hub%2F">https://www.globalsqa.com/wp-json/oembed/1.0/embed?format=xml&amp;url=https%3A%2F%2Fwww.globalsqa.com%2Ftesters-hub%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">12</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection">http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/436.html">436</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/90011/">90011</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
 						id="10027"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">Information Disclosure - Suspicious Comments</th>
@@ -4051,7 +3421,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/swagger-ui-bundle.js">https://reqres.in/api-docs/swagger-ui-bundle.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4071,39 +3441,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">admin</td>
+						<td width="80%">TODO</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/swagger-ui-init.js">https://reqres.in/api-docs/swagger-ui-init.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4129,7 +3473,59 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/swagger-ui-init.js">https://reqres.in/api-docs/swagger-ui-init.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">User</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/api-docs/swagger-ui-init.js">https://reqres.in/api-docs/swagger-ui-init.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">username</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/api-docs/swagger-ui-standalone-preset.js">https://reqres.in/api-docs/swagger-ui-standalone-preset.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4152,165 +3548,9 @@ td {
 						<td width="80%">user</td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">admin</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">query</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">admin</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">query</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -4361,7 +3601,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4381,13 +3621,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;&quot; target=&quot;_blank&quot; class=&quot;tooltipsy&quot; original-title=&quot;&quot;&gt;&lt;img src=&quot;https://i2.wp.com/globalsqa.com//wp-content/uploads/2013/12/logo-3.png?w=940&quot; data-recalc-dims=&quot;1&quot;&gt;&lt;/a&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4407,13 +3647,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4433,13 +3673,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;img src=&quot;https://globalsqa.com/wp-content/uploads/2015/10/logo1.png&quot;  alt=&quot;GlobalSQA&quot;/&gt;&lt;/noscript&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/demo-site/">https://www.globalsqa.com/demo-site/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4459,13 +3699,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;&quot; class=&quot;button tiny_button button_pale regular_text&quot; &gt;Content Mangement&lt;/a&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/demo-site/tooltip/">https://www.globalsqa.com/demo-site/tooltip/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4485,13 +3725,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;img src=&quot;https://globalsqa.com/wp-content/uploads/2015/10/logo1.png&quot;  alt=&quot;GlobalSQA&quot;/&gt;&lt;/noscript&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4511,13 +3751,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;img src=&quot;https://globalsqa.com/wp-content/uploads/2015/10/logo1.png&quot;  alt=&quot;GlobalSQA&quot;/&gt;&lt;/noscript&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4537,13 +3777,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;img src=&quot;https://globalsqa.com/wp-content/uploads/2015/10/logo1.png&quot;  alt=&quot;GlobalSQA&quot;/&gt;&lt;/noscript&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-elasticsearch-ebooks/">https://www.globalsqa.com/free-elasticsearch-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4563,13 +3803,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;img src=&quot;https://globalsqa.com/wp-content/uploads/2015/10/logo1.png&quot;  alt=&quot;GlobalSQA&quot;/&gt;&lt;/noscript&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%252523%252523link%252523%252523%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%252523%252523link%252523%252523%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4589,13 +3829,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;img src=&quot;https://globalsqa.com/wp-content/uploads/2015/10/logo1.png&quot;  alt=&quot;GlobalSQA&quot;/&gt;&lt;/noscript&gt;</td>
+						<td width="80%">&lt;a data-key=&quot;try-link&quot;&gt; List users &lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-tensorflow-ebooks/">https://www.globalsqa.com/free-tensorflow-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/">https://reqres.in/api-docs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4615,13 +3855,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;img src=&quot;https://globalsqa.com/wp-content/uploads/2015/10/logo1.png&quot;  alt=&quot;GlobalSQA&quot;/&gt;&lt;/noscript&gt;</td>
+						<td width="80%">&lt;script src=&quot;./swagger-ui-bundle.js&quot;&gt; &lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/testers-hub/">https://www.globalsqa.com/testers-hub/</a></td>
+						<td width="80%"><a href="https://reqres.in/api-docs/swagger-ui-standalone-preset.js">https://reqres.in/api-docs/swagger-ui-standalone-preset.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4641,7 +3881,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;img src=&quot;https://globalsqa.com/wp-content/uploads/2015/10/logo1.png&quot;  alt=&quot;GlobalSQA&quot;/&gt;&lt;/noscript&gt;</td>
+						<td width="80%">&lt;script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -4696,59 +3936,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/">https://www.globalsqa.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/angularJs-protractor/BankingProject">https://www.globalsqa.com/angularJs-protractor/BankingProject</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cdn-cgi/l/email-protection">https://www.globalsqa.com/cdn-cgi/l/email-protection</a></td>
+						<td width="80%"><a href="https://reqres.in/">https://reqres.in/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4774,7 +3962,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/cheatsheets/">https://www.globalsqa.com/cheatsheets/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4794,13 +3982,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-deep-learning-ebooks/">https://www.globalsqa.com/free-deep-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4820,13 +4008,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-ebooks/">https://www.globalsqa.com/free-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4846,13 +4034,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-elasticsearch-ebooks/">https://www.globalsqa.com/free-elasticsearch-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4872,13 +4060,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-machine-learning-ebooks/">https://www.globalsqa.com/free-machine-learning-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523link%2523%2523%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4898,13 +4086,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/free-tensorflow-ebooks/">https://www.globalsqa.com/free-tensorflow-ebooks/</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4924,13 +4112,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/robots.txt">https://www.globalsqa.com/robots.txt</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23logo%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%2523%2523logo%2523%2523%23%23logo%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4950,13 +4138,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=43200</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/sitemap.xml">https://www.globalsqa.com/sitemap.xml</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%252523%252523link%252523%252523%2523%2523link%2523%2523%23%23link%23%23">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime%252523%252523link%252523%252523%2523%2523link%2523%2523%23%23link%23%23</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4976,7 +4164,59 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=3600</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/api-docs/">https://reqres.in/api-docs/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cache-Control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://reqres.in/cdn-cgi/l/email-protection">https://reqres.in/cdn-cgi/l/email-protection</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cache-Control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
 					</tr>
 				
 				<tr>
@@ -5020,388 +4260,6 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
-						id="10050"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Retrieved from Cache</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as &quot;proxy&quot; caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/robots.txt">https://www.globalsqa.com/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 91</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/plugins/animate-it/assets/css/animate-animo.css?ver=5.4.10">https://www.globalsqa.com/wp-content/plugins/animate-it/assets/css/animate-animo.css?ver=5.4.10</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 8237687</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/plugins/animate/stylesheets/app.css?ver=0.5">https://www.globalsqa.com/wp-content/plugins/animate/stylesheets/app.css?ver=0.5</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 104935</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/plugins/animated-icon-banner-for-visual-composer/vc_doo_banner.css?ver=20120208">https://www.globalsqa.com/wp-content/plugins/animated-icon-banner-for-visual-composer/vc_doo_banner.css?ver=20120208</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 9587808</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.9">https://www.globalsqa.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.9</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 395216</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta">https://www.globalsqa.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 9587808</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/plugins/wp-awesome-faq/jquery-ui.css?ver=5.4.10">https://www.globalsqa.com/wp-content/plugins/wp-awesome-faq/jquery-ui.css?ver=5.4.10</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 4859594</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/plugins/wp-pro-quiz/css/wpProQuiz_front.min.css?ver=0.37">https://www.globalsqa.com/wp-content/plugins/wp-pro-quiz/css/wpProQuiz_front.min.css?ver=0.37</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 395216</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/themes/Savia/images/favicon.png">https://www.globalsqa.com/wp-content/themes/Savia/images/favicon.png</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 4392957</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/themes/Savia/style.css?ver=5.4.10">https://www.globalsqa.com/wp-content/themes/Savia/style.css?ver=5.4.10</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 763159</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/themes/Savia/stylesheets/jquery.jqzoom.css?ver=5.4.10">https://www.globalsqa.com/wp-content/themes/Savia/stylesheets/jquery.jqzoom.css?ver=5.4.10</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 9587808</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-content/themes/Savia/stylesheets/responsive.css?ver=5.4.10">https://www.globalsqa.com/wp-content/themes/Savia/stylesheets/responsive.css?ver=5.4.10</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 9587808</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">12</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</div>
-							<br />
-						
-							<div>Cache-Control: no-cache, no-store, must-revalidate, private</div>
-							<br />
-						
-							<div>Pragma: no-cache</div>
-							<br />
-						
-							<div>Expires: 0</div>
-							<br />
-						
-							<div>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
-							<br />
-						
-							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
-							<br />
-						
-							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10050/">10050</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
 						id="10031"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">User Controllable HTML Element Attribute (Potential XSS)</th>
@@ -5420,7 +4278,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/?s=ZAP">https://www.globalsqa.com/?s=ZAP</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5430,7 +4288,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">s</td>
+						<td width="80%">support</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5446,7 +4304,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/?s=ZAP">https://www.globalsqa.com/?s=ZAP</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5456,7 +4314,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">s</td>
+						<td width="80%">support</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5472,7 +4330,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Fwww.globalsqa.com%2Fwp-admin%2F">https://www.globalsqa.com/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Fwww.globalsqa.com%2Fwp-admin%2F</a></td>
+						<td width="80%"><a href="https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime">https://reqres.in/?oneTimeAmount=1&amp;support=supportOneTime</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5482,215 +4340,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">redirect_to</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Fwww.globalsqa.com%2Fwp-admin%2F">https://www.globalsqa.com/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Fwww.globalsqa.com%2Fwp-admin%2F</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">redirect_to</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/samplepagetest/">https://www.globalsqa.com/samplepagetest/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">_wpcf7</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/samplepagetest/">https://www.globalsqa.com/samplepagetest/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">_wpcf7_container_post</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/samplepagetest/">https://www.globalsqa.com/samplepagetest/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">_wpcf7_locale</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/samplepagetest/">https://www.globalsqa.com/samplepagetest/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">_wpcf7_locale</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/samplepagetest/">https://www.globalsqa.com/samplepagetest/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">_wpcf7_unit_tag</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/samplepagetest/">https://www.globalsqa.com/samplepagetest/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">_wpcf7_unit_tag</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.globalsqa.com/samplepagetest/">https://www.globalsqa.com/samplepagetest/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">_wpcf7_version</td>
+						<td width="80%">support</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5705,7 +4355,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
