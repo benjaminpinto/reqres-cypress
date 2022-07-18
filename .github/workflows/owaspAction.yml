@@ -21,7 +21,7 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.7.0
         with:
-          target: 'https://www.globalsqa.com/angularJs-protractor/BankingProject'
+          target: 'https://reqres.in/'
           fail_action: true
 
       - name: Move files
